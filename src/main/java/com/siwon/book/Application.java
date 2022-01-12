@@ -16,5 +16,7 @@ public class Application {
         * SpringApplication.run 으로 내장 WAS를 실행
         * */
         SpringApplication.run(Application.class,args);
+
+
     }
 }
