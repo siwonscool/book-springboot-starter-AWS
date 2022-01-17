@@ -1,5 +1,6 @@
 package com.siwon.book.domain.posts;
 
+import com.siwon.book.domain.BaseTimeEntity;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -10,7 +11,7 @@ import javax.persistence.*;
 @NoArgsConstructor
 // 테이블과 링크될 클래스를 나타내는 @Entity
 @Entity
-public class Posts {
+public class Posts extends BaseTimeEntity {
 
     // 해당 테이블의 PK 필드를 나타내는 @Id
     @Id
