@@ -1,5 +1,6 @@
 package com.siwon.book.web;
 
+import com.siwon.book.config.auth.LoginUser;
 import com.siwon.book.config.auth.dto.SessionUser;
 import com.siwon.book.service.posts.PostsService;
 import com.siwon.book.web.dto.PostsResponseDto;
@@ -19,11 +20,10 @@ public class IndexController {
 
     //머스테치 스타터 덕분에 컨트롤러에서 문자열을 반환할때 앞의 경로와 뒤의 파일 확장자는 자동으로 지정
     @GetMapping("/")
-    public String index(Model model){
+    public String index(Model model, @LoginUser SessionUser user){
         model.addAttribute("posts", postsService.findAllDesc());
-        SessionUser sessionUser = (SessionUser) httpSession.getAttribute("user");
-        if (sessionUser != null){
-            model.addAttribute("userName",sessionUser.getName());
+        if (user != null){
+            model.addAttribute("userName",user.getName());
         }
         return "index";
     }
