@@ -38,14 +38,22 @@ dependencies {
     * 스프링 부트용 Spring Data jpa 를 사용하기위한 의존성
     * */
     compile('org.springframework.boot:spring-boot-starter-data-jpa')
+
     /*
     * 인메모리 관계형 데이터베이스
     * 별도의 설치가 필요없이 프로젝트 의존성만으로 관리 가능
     * */
     compile('com.h2database:h2')
+
     /*
     * 스프링 부트에서 공식 지원하는 템플릿 엔진 머스테치
     * */
     compile('org.springframework.boot:spring-boot-starter-mustache')
+
+    /*
+    * 스프링 세큐리티 관련 의존성
+    * */
+    compile('org.springframework.boot:spring-boot-starter-oauth2-client')
+    
     testCompile('org.springframework.boot:spring-boot-starter-test')
 }
