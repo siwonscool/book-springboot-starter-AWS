@@ -54,6 +54,11 @@ dependencies {
     * 스프링 세큐리티 관련 의존성
     * */
     compile('org.springframework.boot:spring-boot-starter-oauth2-client')
-    
+
+    /*
+    * 세션저장소로 데이터베이스를 사용하기위한 의존성
+    * */
+    compile('org.springframework.session:spring-session-jdbc')
+
     testCompile('org.springframework.boot:spring-boot-starter-test')
 }
