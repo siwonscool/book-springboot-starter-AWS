@@ -13,7 +13,7 @@ import org.springframework.data.jpa.repository.config.EnableJpaAuditing;
 * @EnableJpaAuditing 어노테이션으로
 * JPA Auditing 어노테이션들을 모두 활성화 할 수 있도록 추가
  * */
-@EnableJpaAuditing
+//@EnableJpaAuditing
 @SpringBootApplication
 public class Application {
     public static void main(String[] args) {
