@@ -1,14 +1,11 @@
 package com.siwon.book.web;
 
-import com.siwon.book.domain.posts.Posts;
-import com.siwon.book.service.posts.PostsService;
+import com.siwon.book.service.PostsService;
 import com.siwon.book.web.dto.PostsResponseDto;
 import com.siwon.book.web.dto.PostsSaveRequestDto;
 import com.siwon.book.web.dto.PostsUpdateRequestDto;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
-
-import javax.transaction.Transactional;
 
 @RequiredArgsConstructor
 @RestController

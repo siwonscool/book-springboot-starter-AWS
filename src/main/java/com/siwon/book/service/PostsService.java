@@ -1,4 +1,4 @@
-package com.siwon.book.service.posts;
+package com.siwon.book.service;
 
 import com.siwon.book.domain.posts.Posts;
 import com.siwon.book.domain.posts.PostsRepository;
