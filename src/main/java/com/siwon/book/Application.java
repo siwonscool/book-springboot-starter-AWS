@@ -4,6 +4,7 @@ package com.siwon.book;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.data.jpa.repository.config.EnableJpaAuditing;
+import org.springframework.util.MultiValueMap;
 
 /*
 * @SpringBootApplication 어노테이션으로
@@ -20,7 +21,5 @@ public class Application {
 
         //SpringApplication.run 으로 내장 WAS를 실행
         SpringApplication.run(Application.class,args);
-
-
     }
 }
