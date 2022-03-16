@@ -2,7 +2,7 @@ package com.siwon.book.web;
 
 import com.siwon.book.config.auth.LoginUser;
 import com.siwon.book.config.auth.dto.SessionUser;
-import com.siwon.book.service.posts.PostsService;
+import com.siwon.book.service.PostsService;
 import com.siwon.book.web.dto.PostsResponseDto;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Controller;
